@@ -17,6 +17,7 @@ for link in links:
     response = requests.get(link, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
 
-    text += "\n\n" + str(soup.get_text().strip())
+    text += "\n\n" + str(soup.get_text())
+    text = "\n".join(line for line in text.splitlines() if line.strip())
 
 print(text)
