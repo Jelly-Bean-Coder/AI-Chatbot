@@ -47,9 +47,9 @@ def tokenize(text):
 
     return grand_stemmed
 
-def flatten(list):
+def flatten(items):
     flattened = []
-    for item in list:
+    for item in items:
         if isinstance(item, list):
             flattened.extend(flatten(item))
 
@@ -70,6 +70,7 @@ def create_matrix():
             if word in map:
                 data[article, map.index(word)] = 1.0
 
+    update_files(map, data, separated_sources)
     return (map, data, separated_sources)
 
 

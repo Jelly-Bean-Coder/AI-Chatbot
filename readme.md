@@ -14,12 +14,12 @@ This chatbot uses a Neural Network built entirely on NumPy. It processes human l
  - __Incremental Learning__: The model is designed to be updated over time as new data is appended to the master text file.
 
 ## 🛠️ Tech Stack
- - Language: Python 3.14
+ - __Language__: Python 3.14
 
- - Math: NumPy (Linear Algebra & Matrix Operations)
+ - __Math__: NumPy (Linear Algebra & Matrix Operations)
 
- - NLP: NLTK (Natural Language Toolkit)
+ - __NLP__: NLTK (Natural Language Toolkit)
 
- - Data Handling: JSON (for Vocabulary) and .npy (for Weight persistence)
+ - __Data Handling__: JSON (for Vocabulary) and .npy (for Weight persistence)
 
- - IDE: PyCharm
+ - __IDE__: PyCharm
